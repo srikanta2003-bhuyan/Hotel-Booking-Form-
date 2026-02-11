@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <form>
+        <h2>Hotel Booking Form</h2>
+
+        <input type="text" placeholder="Name" required>
+
+        <div class="row">
+            <input type="email" placeholder="Email" required>
+            <input type="tel" placeholder="Phone">
+        </div>
+
+        <input type="text" placeholder="Address">
+
+        <div class="row">
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="State">
+        </div>
+
+        <div class="row">
+            <input type="number" placeholder="Pin Code">
+            <input type="text" placeholder="Country">
+        </div>
+
+        <!-- Check-in & Check-out Dates -->
+        <div class="row">
+            <div class="date-field">
+                <label>Check-in Date</label>
+                <input type="date" id="checkin" required>
+            </div>
+
+            <div class="date-field">
+                <label>Check-out Date</label>
+                <input type="date" id="checkout" required>
+            </div>
+        </div>
+
+        <!-- Room Type -->
+        <div class="row">
+            <select required>
+                <option value="">Select Room Type</option>
+                <option>Single Room</option>
+                <option>Double Room</option>
+                <option>Deluxe Suite</option>
+                <option>Executive Suite</option>
+                <option>Presidential Suite</option>
+            </select>
+
+            <input type="number" placeholder="No. of Persons" min="1">
+        </div>
+
+        <!-- Guests -->
+        <div class="row">
+            <select>
+                <option value="">Male</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <select>
+                <option value="">Female</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+            </select>
+
+            <select>
+                <option value="">Kids</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+            </select>
+        </div>
+
+        <button type="submit">Book Now</button>
+    </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
